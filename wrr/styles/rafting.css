@@ -84,8 +84,7 @@
 
   }
 
-  /* the css seclector (rule) remove the underlines from all hyperlink*/
   .socialmedia a {
     text-decoration: none;
     
-  }
+  }   /* the css seclector (rule) remove the underlines from all hyperlink */
