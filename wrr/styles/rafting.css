@@ -1,0 +1,91 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #1B75BC;   /* Primary color */
+    --secondary-color: #FFB400; /* Secondary color */
+    --accent1-color: #009688;   /* Accent color 1 */
+    --accent2-color: #F44336;   /* Accent color 2 */
+  
+    --heading-font: 'Bebas Neue', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* styling the headlings*/
+  h1,h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+  }
+
+  p {
+    font-family: var(--text-font);
+    color: var(--primary-color);
+    margin: 5px;
+    padding-bottom: 10px;
+    
+
+  }
+
+  .hero {
+    position: relative;
+  }
+
+  .hero h1 {
+    position: absolute;
+    top: 50px;
+    right: 510px;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  section img {
+    margin: 0 0 5px 5px;
+  }
+
+  h2 {
+    margin: 5px;;
+  }
+
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  article {
+    position: absolute;
+    bottom:290px;
+    right: 150px;
+    background-color: rgba(6, 44, 114, 0.6);
+    padding: 5px;
+    max-width: 940px;
+  }
+
+  article p {
+    color: #eee;
+  }
+
+  article img {
+    float: right;
+    width: 170px;
+    height: auto;
+    padding: 5px;
+    
+  }
+
+  footer a img {
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+
+  }
+
+  /* the css seclector (rule) remove the underlines from all hyperlink*/
+  .socialmedia a {
+    text-decoration: none;
+    
+  }
