@@ -125,6 +125,12 @@ header img {
     color: var(--accent1-color);
   }
 
+  body { 
+    font-family: 'Roboto', sans-serif; 
+    background-color: var(--light-background); 
+    color: var(--primary-color); 
+  }
+
   p {
     font-family: var(--text-font);
     color: var(--primary-color);
