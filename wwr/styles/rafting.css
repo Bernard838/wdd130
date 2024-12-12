@@ -4,6 +4,8 @@
     --secondary-color: #FFB400; /* Secondary color */
     --accent1-color: #00796B;   /* Accent color 1 */
     --accent2-color: #F44336;   /* Accent color 2 */
+    --light-text-color: #FFFFFF; /* Light text color for dark backgrounds */ 
+    --dark-background: #000000; /* Dark background */
     
   
     --heading-font: 'Bebas Neue', sans-serif;
@@ -43,7 +45,7 @@ header img {
 
 .navigation a {
   display: inline;
-  color: #eeeeee;
+  color: var(--light-text-color);
   flex-shrink: 0;
   font-weight: bold;
   padding: 20px;
@@ -140,7 +142,7 @@ header img {
     position: absolute;
     top: 50px;
     right: 510px;
-    color: #eee;
+    color: var(--light-text-color);
     background-color: rgba(0, 0, 0, 0.5);
   }
 
@@ -168,7 +170,7 @@ header img {
   }
 
   article p {
-    color: #eee;
+    color: var(--light-text-color);
   }
 
   article img {
