@@ -15,6 +15,107 @@
     box-sizing: border-box;
 }
 
+header {
+  margin: 0.1rem auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 30px;
+  background-color: var(--primary-color);
+}
+
+
+header img {
+  margin: 0.40rem 0.25rem 0.40rem 5rem;
+	width: 84px;
+	height: auto;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+	padding: 0;
+  justify-content: space-evenly;
+}
+
+.navigation a {
+  display: inline;
+  color: #eee;
+  flex-shrink: 0;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+	color: var(--secondary-color);
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+#history {
+  margin: 2rem auto;
+  display: grid
+}
+
+#history h2 {
+  text-align: center;
+  font-size: x-large;
+}
+
+#history img {
+  margin: 0 1rem 0 1rem;
+  width: 200px;
+  height: auto;
+  border: 5px solid var(--primary-color);
+}
+#history p {
+  margin:  0 1rem 0 1rem;
+}
+.history-content {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#adventures {
+  margin: 2rem auto;
+  display: grid;
+}
+
+#adventures h2 {
+  text-align: center;
+  font-size: x-large;
+}
+
+#adventures .adventures-gallery { 
+  display: flex; 
+  justify-content: space-evenly; 
+  flex-wrap: wrap; 
+}
+
+  .adventures-gallery img {
+    display: inline;
+    width: 200px;
+    height: auto;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+    flex-shrink: 0;
+  }
+
+  #adventures figure { 
+    flex: 1; 
+    text-align: center; 
+    margin: 1em; }
+
+  #adventures figcaption { 
+    margin-top: 0.3em; 
+    font-style: italic;
+    color: var(--primary-color);
+  }
+
   /* styling the headlings*/
   h1,h2 {
     font-family: var(--heading-font);
@@ -77,14 +178,28 @@
     
   }
 
-  footer a img {
-    width: 36px;
-    height: 36px;
-    padding: 10px;
+  footer {
+    margin: 0.1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    background-color: var(--primary-color);
+  }
 
+  footer p {
+    text-align: center;
+    color: #eee;
+    font-size: 1rem;
+    margin-left: 250px;
+  }
+
+  .socialmedia a img {
+    width: 64px;
+    height: auto;
+    padding: 15px;
+  
   }
 
   .socialmedia a {
     text-decoration: none;
-    
   }   /* the css seclector (rule) remove the underlines from all hyperlink */
