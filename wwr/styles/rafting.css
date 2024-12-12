@@ -116,7 +116,7 @@ header img {
   #adventures figcaption { 
     margin-top: 0.3em; 
     font-style: italic;
-    color: #000000;
+    color: var(--primary-color);
   }
 
   /* styling the headlings*/
@@ -127,7 +127,7 @@ header img {
 
   p {
     font-family: var(--text-font);
-    color: #000000;
+    color: var(--primary-color);
     margin: 5px;
     padding-bottom: 10px;
     
@@ -191,7 +191,7 @@ header img {
 
   footer p {
     text-align: center;
-    color: #eee;
+    color: var(--light-text-color);
     font-size: 1rem;
     margin-left: 250px;
   }
