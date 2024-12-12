@@ -2,8 +2,9 @@
 :root {
     --primary-color: #1B75BC;   /* Primary color */
     --secondary-color: #FFB400; /* Secondary color */
-    --accent1-color: #009688;   /* Accent color 1 */
+    --accent1-color: #00796B;   /* Accent color 1 */
     --accent2-color: #F44336;   /* Accent color 2 */
+    
   
     --heading-font: 'Bebas Neue', sans-serif;
     --text-font: 'Roboto', sans-serif;
@@ -42,7 +43,7 @@ header img {
 
 .navigation a {
   display: inline;
-  color: #eee;
+  color: #eeeeee;
   flex-shrink: 0;
   font-weight: bold;
   padding: 20px;
