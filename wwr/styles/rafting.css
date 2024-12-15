@@ -63,9 +63,10 @@ header img {
   display: grid
 }
 
-#history h2 {
+#history h2, #adventures h2, #contact h2, #team h2 {
   text-align: center;
   font-size: x-large;
+  word-spacing: 5px;
 }
 
 #history img {
@@ -83,15 +84,15 @@ header img {
 
 }
 
-#adventures {
+#adventures  {
   margin: 2rem auto;
   display: grid;
 }
 
-#adventures h2 {
+ /* {
   text-align: center;
   font-size: x-large;
-}
+} */
 
 #adventures .adventures-gallery { 
   display: flex; 
@@ -184,7 +185,7 @@ header img {
   footer {
     margin: 0.1rem auto;
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 300px 1fr 300px;
     align-items: center;
     background-color: var(--primary-color);
   }
@@ -192,8 +193,23 @@ header img {
   footer p {
     text-align: center;
     color: var(--light-text-color);
-    font-size: 1rem;
-    margin-left: 250px;
+    font-size: smaller;
+    margin-right: 100px;
+  }
+
+  .wireframe a {
+    display: inline;
+    color: var(--light-text-color);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 90px;
+  }
+
+  .wireframe a:hover {
+    text-decoration: underline;
+    color: tomato;
+    font-weight: bolder;
   }
 
   .socialmedia a img {
@@ -206,3 +222,210 @@ header img {
   .socialmedia a {
     text-decoration: none;
   }   /* the css seclector (rule) remove the underlines from all hyperlink */
+
+  /* styling contact html */
+
+  .hero1 {
+    position: relative;
+  }
+
+  .hero1 img {
+    display: block;
+    width: 100%;
+    height: 300px;
+     }
+
+  .hero1 h1 {
+    position: absolute;
+    top: 50px;
+    right: 510px;
+    color: var(--light-text-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+
+  #contact {
+    margin: .5rem auto;
+    width: 1170px;
+    height: 300px;
+    background-color: #FFf;
+    display: grid;
+    border: .2rem solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+    position: relative;  
+  }
+
+  .contact-info {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 70px 400px;
+    justify-content: start;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+
+  .contact-info img {
+    width: 34px;
+    height: 34px;
+    border: 2.2px solid var(--accent1-color);
+  }
+
+  .contact-info p {
+    font-size: small;
+    font-size: medium;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .contact-info a {
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    color: tomato;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  
+
+  .style-iframe {
+    position: absolute;
+    width: 350px;
+    height: 190px;
+    top: 40px;
+    right: 110px;
+    border: .1rem solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+  }
+
+  #contact figure {
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+  }
+
+  #contact figcaption {
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--primary-color);
+  }
+
+  #team  {
+    margin: 2rem auto;
+    display: grid;
+  }
+  
+   /* {
+    text-align: center;
+    font-size: x-large;
+  } */
+  
+  #team .team-gallery { 
+    display: flex; 
+    justify-content:space-around ; 
+    flex-wrap: wrap; 
+  }
+  
+    .team-gallery img {
+      display: inline;
+      width: 200px;
+      height: auto;
+      border: 3px solid var(--primary-color);
+      box-shadow: 0 0 20px var(--primary-color);
+      flex-shrink: 0;
+    }
+  
+    #team figure { 
+      flex: 1; 
+      text-align: center; 
+      margin: 1em; }
+  
+    #team figcaption { 
+      margin-top: 0.3em; 
+      font-style: italic;
+      color: var(--primary-color);
+    }
+
+    #contact-form {
+      background-image: url(https://indianheadcanoes.com/wp-content/uploads/2019/04/RaftingSlider11.jpg);
+      margin: 0 auto;
+      width: 1200px;
+      height: 700px;
+      margin-bottom: 20px;
+    }
+
+    .hd2 {
+      width: 840px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: rgba(53, 174, 235, 0.8);
+    }
+
+    .hd2 h2 {
+      margin-top: 90px;
+      color: #000000;
+      word-spacing: 5px;
+    }
+
+    .frm {
+      width: 840px;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px solid rgb(0 0 0 / 0.1);
+      border-radius: 10px;
+      background-color: rgba(53, 174, 235, 0.8);
+      display: grid;
+    }
+
+    fieldset {
+      display: grid;
+      grid-gap: .2rem;
+      margin: 1rem;
+      border: 1px solid rgb(0 0 0 / 0.2);
+      padding: 1rem;
+    }
+
+    legend {
+      padding: 0.5rem;
+      color: #000000;
+      font-size: 1.3em;
+    }
+
+    input, textarea {
+      padding: 0.5rem;
+      font-size: 1.1rem;
+      box-shadow: 0 0 10px var(--primary-color);
+    }
+
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    button {
+      margin: 1rem;
+      background-color: blue;
+      color: #fff;
+      border: none;
+      border-radius: .5rem;
+      padding: .75rem;
+      font-size: 1.2rem;
+    }
+    button:hover {
+      background-color: tomato;
+    }
+
+
+
+  
+
+  
