@@ -208,7 +208,7 @@ header img {
 
   .wireframe a:hover {
     text-decoration: underline;
-    color: tomato;
+    color: var(--secondary-color);
     font-weight: bolder;
   }
 
@@ -284,25 +284,28 @@ header img {
   }
 
   .contact-info, .call-to-action a:hover {
-    color: tomato;
+    color: var(--secondary-color);
     font-weight: bolder;
     text-decoration: underline;
   }
 
-  .call-to-action a {
+  .cta-contact a:hover {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+
+  .call-to-action a, .cta-button a {
     margin-left: 80px;
-    color: var(--primary-color);
+    color: var(--light-text-color);
   }
   
 
   .style-iframe {
     position: absolute;
-    width: 350px;
-    height: 190px;
     top: 40px;
     right: 110px;
-    border: .1rem solid var(--primary-color);
-    box-shadow: 0 0 20px var(--primary-color); 
+    
   }
 
   #contact figure {
@@ -359,7 +362,7 @@ header img {
       margin: 1em; }
   
     #team figcaption { 
-      margin-top: 0.3em; 
+      margin-bottom: 0.5em; 
       font-style: italic;
       color: var(--primary-color);
     }
@@ -440,9 +443,9 @@ header img {
       vertical-align: bottom;
     }
 
-    button {
+    button, .cta-button {
       margin: 1rem;
-      background-color: blue;
+      background-color: var(--primary-color);
       color: #fff;
       border: none;
       border-radius: .5rem;
@@ -450,8 +453,93 @@ header img {
       font-size: 1.2rem;
     }
     button:hover {
-      background-color: tomato;
+      background-color: var(--secondary-color);
     }
+
+    .tripps {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+      text-align: center;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+    }
+
+    .trip h3 {
+      font-weight: bolder;
+      color: var(--accent1-color);
+    }
+
+  .trip p {
+    font-family: var(--text-font);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: small;
+  }
+
+  .tripshd2 {
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-top: 2px;
+  }
+    .trips-table {
+      background-image: url(https://www.nomadamerica.com/wp-content/uploads/2016/11/Costa-Rica-river-rafting-adventure.jpg);
+      height: 300px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    .cta-contact h2 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .thd2 {
+      text-align: center;
+      margin: 0 auto;
+      width: 840px;
+      background-color: var(--primary-color);
+    }
+
+    .thd2 h2, .tripshd2 h2 {
+      color: var(--light-text-color);
+      letter-spacing: 2px;
+      font-weight: bolder;
+      font-size: larger;
+      word-spacing: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(140 140 140);
+      font-size: 0.8rem;
+      font-family: var(--text-font);
+      text-align: center;
+      letter-spacing: 1px;
+      width: 840px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+      color: var(--light-text-color);
+    }
+
+    thead {
+      background-color: var(--primary-color);
+    }
+
+    th,td {
+      border: 1px solid rgb(160 160 160);
+      padding: 15px 30px;
+    }
+
+  tbody > tr {
+    background-color: rgb(237 238 242);
+  }
+
 
 
 
